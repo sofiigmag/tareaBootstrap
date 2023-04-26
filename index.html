@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tarea Bootstrap</title>
+    <link rel="icon" href="./assets/img/gato.png" alt="ícono de gato">
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap icons CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
+    />
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="./assets/styles/index.css" />
+
+  </head>
+  <body>
+    <!--  navbar -->
+    <nav class="navbar navbar-expand-sm" style="background-color: darkcyan;">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+          class="logo-gato"
+          src="./assets/img/gato.png"
+          alt="logo de gatito"
+          />
+        </a>
+        <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+        >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a
+            class="nav-link"
+            href="https://www.linkedin.com/in/sof%C3%ADa-g%C3%B3mez-5311a7272/"
+            target="blank"
+            >Linkedin</a
+            >
+          </li>
+          <li class="nav-item dropdown">
+            <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+            >
+            Proyectos
+          </a>
+          <ul class="dropdown-menu disabled">
+            <li><a class="dropdown-item" href="./dimeTuNombre/dimeTuNombre.html">Dime tu nombre</a></li>
+            <li>
+              <a class="dropdown-item disabled" href="#">Calculadora</a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item disabled" href="#"
+                  >Something else here</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Disabled</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Acerca de -->
+    <div class="container mt-4">
+      <div class="row">
+        <div class="col">
+          <h1>Sofía Gómez</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 mt-4 col-md-6">
+          <h3>Bióloga</h3>
+        </div>
+        <div class="col-12 mt-4 col-md-6">
+          <h3>Aprendiz de Desarolladora Java Fullstack</h3>
+        </div>
+      </div>
+    </div>
+    <!-- Carrusel -->
+    <!-- desde acá arriba todo el contenido del carrusel va alineado al centro -->
+    <div class="container my-4 text-center">
+      <div class="row justify-content-center">
+        <!-- Carrusel -->
+        <div class="col-9 mb-2">
+          <div
+          id="carouselExample"
+          class="carousel slide"
+          data-bs-ride="carousel"
+          >
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="2000">
+              <img
+              src="./assets/img/opuntia.jpg"
+              class="d-block w-100 rounded"
+              alt="planta de nopal"
+              />
+            </div>
+            <div class="carousel-item active" data-bs-interval="2000">
+              <img
+              src="./assets/img/desarrolladoras.jpg"
+              class="d-block w-100 rounded"
+              alt="desarrolladoras platicando"
+              />
+            </div>
+            <div class="carousel-item active" data-bs-interval="2000">
+              <img
+              src="./assets/img/gatonaranja.jpg"
+              class="d-block w-100 rounded"
+              alt="gato lavandose el puñito"
+              />
+            </div>
+            <div class="carousel-item active" data-bs-interval="2000">
+              <img
+              src="./assets/img/flor.jpg"
+              class="d-block w-100 rounded"
+              alt="flor de Opuntia decumbens"
+              />
+            </div>
+          </div>
+          <button
+          class="carousel-control-prev"
+          type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide="prev"
+              >
+              <span
+              class="carousel-control-prev-icon"
+              aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide="next"
+              >
+              <span
+              class="carousel-control-next-icon"
+              aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <!-- descripción carrusel -->
+        <div class="col-12 col-lg-3">
+          <div class="row">
+            <div class="col">
+              <p>
+                Estudié biología e hice mi tesis sobre la biología floral de una especie de nopal, sin embargo, recientemente me inicié como  desarrolladora Java Fullstack en el Bootcamp Generation México, en el que estoy aprendiendo a utilizar tecnologías como HTML, JavaScript y CSS para crear aplicaciones web. Esta página es una práctica en la que utilizo dichas tecnologías y el toolkit Bootstrap.
+              </p>
+            </div>
+          </div>
+          <!-- Acceso a DOM -->
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-5 text-center">
+                <h6>Cambia mi nombre de color:</h6>
+                <h3 id="fullname" class="text-color"> Mi nombre</h3>
+              </div>
+            </div>
+            <!-- Botones cambia el color -->
+            <div class="row mb-4">
+              <div class="col">
+                <button onclick="changeColorTo('red')" type="button" class="btn btn-danger">Rojo</button>
+              </div>
+              <div class="col">
+                <button onclick="changeColorTo('blue')"type="button" class="btn btn-info">Azul</button>
+              </div>
+              <div class="col">
+                <button onclick="changeColorTo('green')" type="button" class="btn btn-success">Verde</button>
+              </div>
+            </div>
+          </div>
+
+          <!--  Botón linkedin -->
+          <div class="row">
+            <div class="col">
+              <a
+              href="https://www.linkedin.com/in/sof%C3%ADa-g%C3%B3mez-5311a7272/"
+              target="_blank"
+              >
+                <button type="button" class="btn btn-dark">
+                  <i class="bi bi-linkedin"></i>
+                  Contáctame
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Tarjetas -->
+    <div class="row text-center row-cols-1 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card">
+            <img src="./assets/img/HTML.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">HTML</h5>
+              <p class="card-text">Se utiliza para definir los elementos y la organización de los contenidos en una página.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="./assets/img/JS.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">JavaScript</h5>
+              <p class="card-text">Es utilizado para crear interactividad y funcionalidad en las páginas web. Se utiliza para crear efectos visuales, validar formularios, interactuar con bases de datos y mucho más.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="./assets/img/CSS.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">CSS</h5>
+              <p class="card-text">Se encarga de dar estilo y diseño a las páginas web. Se utiliza para definir la apariencia visual de los elementos HTML, incluyendo el color, la fuente, el tamaño y la posición.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- Ondas SVG -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path
+      fill="#212529"
+      fill-opacity="1"
+      d="M0,288L48,266.7C96,245,192,203,288,202.7C384,203,480,245,576,266.7C672,288,768,288,864,250.7C960,213,1056,139,1152,133.3C1248,128,1344,192,1392,224L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+      ></path>
+    </svg>
+    <!-- Script Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Script cambia el nombre -->
+    <script>
+      const refName = document.getElementById("fullname");
+      console.log(refName);
+      refName.innerHTML= "Sofía <strong>Gómez</strong>";
+    </script>
+    <!-- Script externo -->
+    <script src="./assets/js/index.js"></script>
+  </body>
+</html>
